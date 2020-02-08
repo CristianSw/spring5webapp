@@ -59,6 +59,8 @@ public class BootStrapData implements CommandLineRunner {
 
         Publisher librarius = new Publisher("Librarius", "Calea Iesilor 10", "Chisinau", "Sculeanca", "MD-2006");
         publisherRepository.save(librarius);
+        Publisher elefant = new Publisher("Elefant MD", "Grigorie Vieru", "Chisinau", "Centru", "MD-2001");
+        publisherRepository.save(elefant);
 
         System.out.println("Publishers: " + publisherRepository.count());
     }
